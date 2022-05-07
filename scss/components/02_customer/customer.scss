@@ -1,0 +1,33 @@
+.customer{
+  padding: 60px;
+  border-bottom: $border-bottom;
+  .row{
+    column-gap: 76.5px;
+    justify-content: center;
+    align-items: center;
+
+    img{
+      &:hover{
+        opacity: 0;
+        transition: $transition;
+      }
+    }
+  }
+
+  .row-2{
+    display: flex;
+    column-gap: 76.5px;
+    justify-content: center;
+    align-items: center;
+    margin-top:-29px;
+
+
+    img{
+      opacity: 1;
+      &:hover{
+        opacity: 1;
+        transition: $transition;
+      }
+    }
+  }
+}

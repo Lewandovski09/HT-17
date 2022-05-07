@@ -2,7 +2,6 @@ body{
   @include font ($font-Quicksand,$m);
   color:$main-color-font;
   font-size: $main-fz-font;
-  //line-height: 28.65px;
 }
 .wrapper{
   display: flex;
