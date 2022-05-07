@@ -1,0 +1,27 @@
+%nav{
+  font-size: 12px;
+  line-height: 15px;
+  color:$color-nav;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  text-shadow: 0px 0px 5px #E6E6E6;
+  text-align: center;
+}
+
+%btn{
+  border-radius: 2px;
+}
+
+%btn-link{
+  font-size: $fz-btn;
+  transition: $transition;
+  line-height: $lh-btn;
+  text-align: center;
+  font-family: $font-Quicksand;
+  min-width: 113px;
+  min-height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: $ver-padding-btn 0;
+}

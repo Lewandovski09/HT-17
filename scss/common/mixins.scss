@@ -1,0 +1,13 @@
+@mixin font($ff,$fw){
+  font-family: $ff;
+  font-weight: $fw;
+}
+
+@mixin btn($b-color-btn){
+  background-color: $b-color-btn;
+}
+
+@mixin btn-link($color-btn, $fw-btn){
+  color:$color-btn;
+  font-weight: $fw-btn;
+}
