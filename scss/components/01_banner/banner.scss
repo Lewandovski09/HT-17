@@ -1,6 +1,8 @@
 .banner {
-    padding: 92px 0 284px;
-    background: linear-gradient(180deg, #F4F7FF 0%, #F1F5FF 100%);
+    padding: 92px 0 28px;
+    background: url("./../assets/images/main/01_banner/background.svg") center center no-repeat;
+    background-size: cover;
+
     border-bottom: $border-bottom;
 
     &__header {
@@ -9,33 +11,44 @@
 
         h1{
             margin: 16px 0 28px;
-            font-size: 48px;
-            line-height: 60px;
-            font-weight: $l;
-            color: #3D4F9F;
+            @include title($title-blue);
             span{
                 font-weight: $m;
             }
         }
     }
     &__subtitle{
-        font-family: $font-Roboto;
-        font-size: 10px;
-        line-height: 12px;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        color: #3D4F9F;
+        @include smallest($smallest-blue);
     }
 
     &__text{
         margin: 0 auto;
         max-width: 502px;
         @include font($font-Roboto,$n);
-        line-height: 29px;
         text-align: center;
         letter-spacing: 0.03em;
-        color: #8D96BD;
+        color: $color-text;
+    }
+
+    &__start-video{
+        width: 52px;
+        height: 52px;
+        background-color: #fff;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto 0;
+        svg{
+            justify-self: center;
+            align-self: center;
+        }
+    }
+
+    &__dotes{
+        justify-content: center;
+        align-items: end;
+        margin-top: 176px;
+        column-gap: 12px;
     }
 }
 
-.container {}

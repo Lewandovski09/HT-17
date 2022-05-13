@@ -3,13 +3,30 @@
   <component name="ChangeListManager">
     <list default="true" id="addf0bd8-9358-4ab5-ae30-f7f08a224bcd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/main/01_banner/backlround.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/main/02_customers/01-b.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/main/02_customers/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/main/02_customers/02-b.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/main/02_customers/03-b.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/main/02_customers/04-b.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/main/02_customers/05-b.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/common/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/common/common.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/common/extends.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/common/extends.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/common/mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/common/mixins.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/common/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/common/variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/components/01_banner/banner-media.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/01_banner/banner-media.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/components/01_banner/banner.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/01_banner/banner.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/components/02_customer/customer-media.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/02_customer/customer-media.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/components/02_customer/customer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/02_customer/customer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/components/footer/footer-media.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/footer/footer-media.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/components/footer/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/footer/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/components/header/header-media.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/header/header-media.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/components/header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/header/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/components/main/main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +76,13 @@
       <workItem from="1651858110707" duration="23000" />
       <workItem from="1651858144485" duration="6047000" />
       <workItem from="1651911710219" duration="25237000" />
+      <workItem from="1652093401125" duration="13634000" />
+      <workItem from="1652109398686" duration="5767000" />
+      <workItem from="1652115431705" duration="864000" />
+      <workItem from="1652184160203" duration="5426000" />
+      <workItem from="1652261926461" duration="2678000" />
+      <workItem from="1652347033516" duration="20317000" />
+      <workItem from="1652432970252" duration="24963000" />
     </task>
     <servers />
   </component>

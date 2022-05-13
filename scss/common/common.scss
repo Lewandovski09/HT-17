@@ -1,8 +1,15 @@
 body{
-  @include font ($font-Quicksand,$m);
+  font-family: $font-Roboto;
   color:$main-color-font;
-  font-size: $main-fz-font;
+  font-size: $fz-main;
+  font-weight: $fw-main;
+  line-height: $line-height;
 }
+.main{
+  flex-grow: 1;
+  margin-top: $header-margin;
+}
+
 .wrapper{
   display: flex;
   flex-direction: column;
@@ -25,15 +32,17 @@ body{
 .col-right {
   width: 50%;
 }
-
-.nav {
+nav{
+  @extend %nav;
 }
+
 .btn{
   @extend %btn;
+  &-link{
+    @extend %btn-link;
+  }
 }
-.btn-link{
-  @extend %btn-link;
-}
+
 
 .d-flex{
   display: flex;
@@ -41,8 +50,54 @@ body{
 
 
 .link{
-  display: inline-block;
+  display: block;
   text-decoration: none;
   color:inherit;
-  width: 100%;
+  text-align: center;
+}
+
+.dote{
+  &-active{
+    background-color: $accent-color;
+  }
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #D6DAE5;
+  &:hover{
+    background-color: $accent-color;
+    transition: $transition;
+  }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: $content-width) {
+  .container {
+    max-width: $break-point__l;
+  }
+}
+
+@media (max-width: $break-point__l) {
+  .container {
+    max-width: $break-point__m;
+  }
+}
+
+@media (max-width: $break-point__m) {
+  .container {
+    max-width: $break-point__s;
+  }
+}
+
+@media (max-width: $break-point__m) {
+  .container {
+    max-width: none;
+  }
 }

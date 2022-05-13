@@ -4,7 +4,7 @@
   color:$color-nav;
   letter-spacing: 0.05em;
   text-transform: capitalize;
-  text-shadow: 0px 0px 5px #E6E6E6;
+  text-shadow: 0 0 5px #E6E6E6;
   text-align: center;
 }
 
@@ -14,6 +14,7 @@
 
 %btn-link{
   font-size: $fz-btn;
+  font-weight: $b;
   transition: $transition;
   line-height: $lh-btn;
   text-align: center;
@@ -25,3 +26,46 @@
   justify-content: center;
   padding: $ver-padding-btn 0;
 }
+
+%txt-title-h1{
+  font-family: $font-Quicksand;
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 300;
+}
+%txt-subtitle-h2{
+  font-family: $font-Quicksand;
+  font-size: 36px;
+  line-height: 45px;
+  $color-title:#3D4F9F;
+}
+%smallest-txt{
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.1em;
+  color: #3D4F9F;
+  text-transform: uppercase;
+  font-family: $font-Roboto;
+}
+
+%txt-l{
+  font-size: 24px;
+  line-height: 30px;
+}
+
+%txt-m{
+  font-size: 18px;
+  line-height: 22px;
+}
+
+%txt-s{
+  font-size: 15px;
+  line-height: 29px;
+}
+
+%txt-xs {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+

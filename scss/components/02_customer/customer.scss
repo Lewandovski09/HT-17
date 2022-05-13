@@ -1,33 +1,35 @@
 .customer{
+  $color-customers: #D6DAE5;
+  $hover-color-customers:#5982E7;
+  $visited-color-customers:#757E9A;
+  $active-color-customers:$accent-color;
   padding: 60px;
   border-bottom: $border-bottom;
   .row{
     column-gap: 76.5px;
     justify-content: center;
     align-items: center;
+    a{
+      svg>path{
+        fill:$color-customers;
+      }
+    }
+    a:visited{
+      svg>path{
+        fill:$visited-color-customers;
+      }
+    }
 
-    img{
+    svg>path{
+
       &:hover{
-        opacity: 0;
         transition: $transition;
+        fill:$hover-color-customers;
+      }
+      &:active{
+        fill:$active-color-customers;
       }
     }
   }
 
-  .row-2{
-    display: flex;
-    column-gap: 76.5px;
-    justify-content: center;
-    align-items: center;
-    margin-top:-29px;
-
-
-    img{
-      opacity: 1;
-      &:hover{
-        opacity: 1;
-        transition: $transition;
-      }
-    }
-  }
 }

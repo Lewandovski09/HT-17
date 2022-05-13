@@ -1,13 +1,81 @@
-@mixin font($ff,$fw){
-  font-family: $ff;
+
+@mixin btn($bg: false){
+
+  @if($bg == $blue-bg-color){
+    background-color: $blue-bg-color;
+    color: $blue-fz-color;
+  }
+
+  @else if($bg == $red-bg-color){
+    background-color: $red-bg-color;
+    color: $red-fz-color;
+  }
+
+  @else if($bg == $gray-bg-color){
+    background-color: $gray-bg-color;
+    color: $gray-fz-color;
+    font-weight: $m;
+  }
+
+  @else {
+    background-color: #fff;
+    color:#000;
+  }
+
+}
+
+@mixin ff-15($ff: false){
+  @extend %smallest-txt;
+  @if($ff == $font-Quicksand){
+    font-family: $font-Quicksand;
+  }
+  @else{
+    font-family: $font-Roboto;
+  }
+}
+
+@mixin title($color: false){
+  @extend %txt-title-h1;
+  @if($color == $title-blue){
+    color: $title-blue;
+  }
+  @else{
+    color:#fff;
+  }
+}
+
+@mixin smallest($color: false){
+  @extend %smallest-txt;
+  @if($color == $smallest-blue){
+    color: $smallest-blue;
+  }
+  @else{
+    color:#fff;
+  }
+}
+
+@mixin subtitle($fw){
+  @extend %txt-subtitle-h2;
   font-weight: $fw;
 }
 
-@mixin btn($b-color-btn){
-  background-color: $b-color-btn;
+@mixin txt-l($fw){
+  @extend %txt-l;
+  font-weight: $fw;
 }
 
-@mixin btn-link($color-btn, $fw-btn){
-  color:$color-btn;
-  font-weight: $fw-btn;
+@mixin txt-m($fw){
+  @extend %txt-m;
+  font-weight: $fw;
 }
+
+@mixin txt-s($fw){
+  @extend %txt-s;
+  font-weight: $fw;
+}
+
+@mixin txt-xs($fw){
+  @extend %txt-xs;
+  font-weight: $fw;
+}
+
