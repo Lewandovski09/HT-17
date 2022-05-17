@@ -6,6 +6,7 @@
   text-transform: capitalize;
   text-shadow: 0 0 5px #E6E6E6;
   text-align: center;
+  font-family: $font-Quicksand;
 }
 
 %btn{
@@ -25,6 +26,7 @@
   align-items: center;
   justify-content: center;
   padding: $ver-padding-btn 0;
+  letter-spacing: 0;
 }
 
 %txt-title-h1{
@@ -32,12 +34,14 @@
   font-size: 48px;
   line-height: 60px;
   font-weight: 300;
+  letter-spacing: 0;
 }
 %txt-subtitle-h2{
   font-family: $font-Quicksand;
   font-size: 36px;
   line-height: 45px;
-  $color-title:#3D4F9F;
+  color:$title-blue;
+  letter-spacing: 0;
 }
 %smallest-txt{
   font-size: 10px;
@@ -49,23 +53,35 @@
 }
 
 %txt-l{
+  font-family: $font-Quicksand;
   font-size: 24px;
   line-height: 30px;
+  letter-spacing: 0;
+  color: #3D4F9F;
+
 }
 
 %txt-m{
+  font-family: $font-Quicksand;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 23px;
+  letter-spacing: 0;
 }
 
 %txt-s{
   font-size: 15px;
   line-height: 29px;
+  letter-spacing: 0.03em;
 }
 
 %txt-xs {
   font-size: 12px;
   line-height: 15px;
+  font-family: $font-Quicksand;
+  letter-spacing: 0.05em;
 }
+
+%txt-main{}
+
 
 

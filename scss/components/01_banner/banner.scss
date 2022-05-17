@@ -2,7 +2,6 @@
     padding: 92px 0 28px;
     background: url("./../assets/images/main/01_banner/background.svg") center center no-repeat;
     background-size: cover;
-
     border-bottom: $border-bottom;
 
     &__header {
@@ -24,10 +23,10 @@
     &__text{
         margin: 0 auto;
         max-width: 502px;
-        @include font($font-Roboto,$n);
         text-align: center;
         letter-spacing: 0.03em;
         color: $color-text;
+        @include txt-s($n);
     }
 
     &__start-video{

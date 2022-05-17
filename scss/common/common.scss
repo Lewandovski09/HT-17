@@ -4,6 +4,7 @@ body{
   font-size: $fz-main;
   font-weight: $fw-main;
   line-height: $line-height;
+  letter-spacing: $letter-space;
 }
 .main{
   flex-grow: 1;
@@ -46,6 +47,7 @@ nav{
 
 .d-flex{
   display: flex;
+  flex-wrap: wrap;
 }
 
 

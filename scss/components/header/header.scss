@@ -9,6 +9,7 @@
     $text-shadow-btn:0 4px 4px rgba(0, 0, 0, 0.25);
     $background-color:#fff;
     position: fixed;
+    z-index: 999;
     top:0;
     width: 100%;
     background-color: $background-color;
@@ -51,6 +52,12 @@
             a{
                 svg>path{
                     fill:$color-icons;
+                }
+            }
+            a:hover{
+                svg>path{
+                    transition: $transition;
+                    fill:$hover-color-icons;
                 }
             }
             a:visited{

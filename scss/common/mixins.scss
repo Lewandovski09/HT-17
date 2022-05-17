@@ -11,27 +11,12 @@
     color: $red-fz-color;
   }
 
-  @else if($bg == $gray-bg-color){
+  @else {
     background-color: $gray-bg-color;
     color: $gray-fz-color;
     font-weight: $m;
   }
 
-  @else {
-    background-color: #fff;
-    color:#000;
-  }
-
-}
-
-@mixin ff-15($ff: false){
-  @extend %smallest-txt;
-  @if($ff == $font-Quicksand){
-    font-family: $font-Quicksand;
-  }
-  @else{
-    font-family: $font-Roboto;
-  }
 }
 
 @mixin title($color: false){
@@ -69,9 +54,15 @@
   font-weight: $fw;
 }
 
-@mixin txt-s($fw){
+@mixin txt-s($fw, $ff: false,){
   @extend %txt-s;
   font-weight: $fw;
+  @if($ff == $font-Quicksand){
+    font-family: $font-Quicksand;
+  }
+  @else{
+    font-family: $font-Roboto;
+  }
 }
 
 @mixin txt-xs($fw){

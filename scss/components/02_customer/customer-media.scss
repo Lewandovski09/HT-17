@@ -1,21 +1,72 @@
 .customer{
   @media (max-width: $content-width) {
     .row {
-      column-gap: 70px;
-      justify-content: space-between;
+      column-gap: 75px;
+      justify-content: center;
       align-items: center;
+
+      svg {
+        width: 110px;
+      }
     }
+
   }
 
   @media (max-width: $break-point__l) {
+    padding: 55px 0;
+    .row {
+      column-gap: 35px;
+      justify-content: space-between;
+      align-items: center;
 
+      svg {
+        width: 105px;
+      }
+    }
   }
 
   @media (max-width: $break-point__m) {
-
+    padding: 50px 0;
+    .row {
+      column-gap: 0;
+      row-gap: 10px;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      a{
+        width: calc(100% / 3);
+      }
+    }
   }
 
   @media (max-width: $break-point__s) {
+    .row {
+      column-gap: 2px;
+      row-gap: 10px;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      a{
+        width: calc(100% / 3 - 2px);
+      }
+      svg{
+        width: 100px;
+      }
+    }
+  }
 
+  @media (max-width: $break-point__xs) {
+    padding: 45px 0;
+    .row {
+      column-gap: 3px;
+      row-gap: 8px;
+      width: 100%;
+      a{
+        width: calc(100% / 3 - 3px);
+      }
+      svg{
+        width: 82px;
+      }
+    }
   }
 }

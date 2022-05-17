@@ -1,0 +1,107 @@
+.features{
+  border-bottom: $border-bottom;
+  padding: 170px 0;
+  font-family: $font-OpenSans;
+  background: #fff url("./../assets/images/main/04_features/bg.svg") center center/contain no-repeat;
+  $bg-icon:#F1F5FF;
+  $color-subtitle: #4074F8;
+  $color-text:#ADB3CB;
+  $color-line:#DAE4FE;
+
+
+  &__header{
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    p{
+      @include smallest($smallest-blue);
+      margin-bottom: 20px;
+    }
+    h2{
+      @include txt-l($m);
+    }
+  }
+  &__row{
+    column-gap: 67px;
+    max-width: 761px;
+    margin: 92px auto;
+    justify-content: space-between;
+  }
+  &__item{
+    width: calc((100% - 67px*3) / 4);
+    font-family: $font-OpenSans;
+  }
+  &__icon{
+    width: 69px;
+    height: 69px;
+    border-radius: 50%;
+    background: $bg-icon;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  &__subtitle{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    color:$color-subtitle;
+    margin: 33px 0 25px;
+  }
+  &__text{
+    font-size: 11px;
+    line-height: 19px;
+    text-align: center;
+    color: $color-text;
+    font-weight: $sb;
+  }
+
+  &__buttons{
+    display: flex;
+    justify-content: center;
+    column-gap: 48px;
+    p{
+      display: inline-block;
+      align-self: center;
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 19px;
+      text-align: center;
+      color: #ADB3CB;
+      text-transform: uppercase;
+      font-family: $font-OpenSans;
+      position: relative;
+      &::before{
+        content:"";
+        display: block;
+        width: 15px;
+        background-color: $color-line;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        left: -32px;
+      }
+      &::after{
+        content:"";
+        display: block;
+        width: 15px;
+        background-color: $color-line;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        left: 32px;
+      }
+    }
+  }
+
+  &__btn-1{
+    a{
+      @include btn($red-bg-color);
+    }
+  }
+  &__btn-2{
+    a{
+      @include btn($blue-bg-color);
+    }
+  }
+}

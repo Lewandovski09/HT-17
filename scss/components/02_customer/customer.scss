@@ -3,15 +3,21 @@
   $hover-color-customers:#5982E7;
   $visited-color-customers:#757E9A;
   $active-color-customers:$accent-color;
-  padding: 60px;
+  padding: 60px 0;
   border-bottom: $border-bottom;
   .row{
-    column-gap: 76.5px;
+    column-gap: 76px;
     justify-content: center;
     align-items: center;
     a{
       svg>path{
         fill:$color-customers;
+      }
+    }
+    a:hover{
+      svg>path{
+        transition: $transition;
+        fill:$hover-color-customers;
       }
     }
     a:visited{

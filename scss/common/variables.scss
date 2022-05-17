@@ -1,4 +1,5 @@
 $content:1206px;
+$half-content:$content / 2;
 $hor-padding:15px;
 $content-width: $content+($hor-padding *2);
 $accent-color:#5E81FE;
@@ -9,6 +10,7 @@ $break-point__l:1024px;
 $break-point__m:767px;
 $break-point__s:576px;
 $break-point__xs: 470px;
+$break-point__extra-xs:370px;
 
 
 
@@ -22,10 +24,12 @@ $fz-main:14px;
 $line-height: 27px;
 $main-color-font:#8D96BD;
 $fw-main:500;
+$letter-space:  0.03em;
 
 
 $font-Quicksand:Quicksand, "sans-serif";
 $font-Roboto: Roboto, "sans-serif";
+$font-OpenSans: "Open Sans", "sans-serif";
 $m:500;
 $b:700;
 $sb:600;
@@ -43,4 +47,6 @@ $red-bg-color:#FFD7D7;
 $red-fz-color:#D43F3F;
 $gray-bg-color:#E8ECF4;
 $gray-fz-color:#7382A3;
+$Bblue-bg-color:#4C85FF;
+$Bwhite-fz-color:#FFFFFF;
 
