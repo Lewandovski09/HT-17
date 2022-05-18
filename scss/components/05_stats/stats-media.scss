@@ -41,6 +41,20 @@
       width: 100%;
     }
 
+    $padding-from-center:15px;
+    &__productivity {
+      padding: 66px $padding-from-center 66px ;
+      &-wrapper{
+        margin: 0 auto;
+      }
+    }
+    &__app {
+      padding: 70px $padding-from-center 66px ;
+      &-wrapper{
+        margin: 0 auto;
+      }
+    }
+
   }
 
 }

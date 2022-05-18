@@ -1,6 +1,7 @@
 .banner{
+  position: relative;
   @media (max-width: $content-width) {
-    padding: 90px 0 28px;
+    //padding: 90px 0 28px;
 
     &__dotes{
       margin-top: 170px;
@@ -8,7 +9,15 @@
   }
 
   @media (max-width: $break-point__l) {
-    padding: 85px 0 25px;
+    &:before {
+      background-size: contain;
+      background-repeat: repeat;
+    }
+    &:after {
+      background-size: contain;
+      height: 80%;
+    }
+    //padding: 85px 0 25px;
 
     &__header {
       h1 {
@@ -24,7 +33,11 @@
   }
 
   @media (max-width: $break-point__m) {
-    padding: 70px 0 25px;
+    &:after {
+      background-size: contain;
+      height: 58%;
+    }
+    //padding: 70px 0 25px;
     font-size: 14px;
     line-height: 22px;
     &__header {
@@ -44,7 +57,11 @@
   }
 
   @media (max-width: $break-point__s) {
-    padding: 60px 0 20px;
+    &:after {
+      background-size: contain;
+      height: 45%;
+    }
+    //padding: 60px 0 20px;
     font-size: 13px;
     line-height: 22px;
     &__header {
@@ -68,7 +85,11 @@
   }
 
   @media (max-width: $break-point__xs) {
-    padding: 60px 0 20px;
+    &:after {
+      background-size: contain;
+      height: 37%;
+    }
+    //padding: 60px 0 20px;
     &__header {
       h1{
         margin: 13px 0 25px;
@@ -85,6 +106,13 @@
     .dote{
       width: 6px;
       height: 6px;
+    }
+  }
+
+  @media (max-width: $break-point__extra-xs) {
+    &:after {
+      background-size: contain;
+      height: 32%;
     }
   }
 }

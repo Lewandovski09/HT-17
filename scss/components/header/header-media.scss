@@ -3,7 +3,7 @@
 
   @media (max-width: $content-width) {
     &__menu {
-      column-gap: 45px;
+      column-gap: 40px;
     }
 
     &__logo {
@@ -52,7 +52,7 @@
 
     &__wrapper{
       position: relative;
-      padding: 18px;
+      padding: 19px;
     }
 
     &__menu {
@@ -144,7 +144,7 @@
 
   @media (max-width: $break-point__s) {
     &__wrapper{
-      padding: 17px;
+      padding: 19px;
     }
     nav {
       ul {

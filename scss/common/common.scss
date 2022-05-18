@@ -1,4 +1,6 @@
 body{
+  min-height: 100vh;
+  overflow-x: hidden;
   font-family: $font-Roboto;
   color:$main-color-font;
   font-size: $fz-main;
@@ -7,15 +9,7 @@ body{
   letter-spacing: $letter-space;
 }
 .main{
-  flex-grow: 1;
   margin-top: $header-margin;
-}
-
-.wrapper{
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  overflow: hidden;
 }
 .container{
   max-width: $content-width;
