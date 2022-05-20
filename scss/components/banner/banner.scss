@@ -2,7 +2,7 @@
     $height-banner:calc(100vh - #{$header-margin});
     //padding: 92px 0 212px;
     padding: 20vh 0 0 0;
-    min-height: $height-banner;
+    height: $height-banner;
     border-bottom: $border-bottom;
     position: relative;
     z-index: 1;

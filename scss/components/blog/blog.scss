@@ -1,0 +1,132 @@
+.blog{
+  border-bottom: $border-bottom;
+  $shadow-filter-img:drop-shadow(0 15px 100px #E5EBF8);
+  $box-shadow-article:0 15px 50px #EFF4FF;
+  padding: 104px 0 212px;
+  background: #F5F8FF;
+  position: relative;
+  .row{
+    width: 100%;
+    gap:66px
+  }
+  .col-right{
+    width: calc(50% - 33px);
+  }
+  .col-left{
+    width: calc(50% - 33px);
+  }
+
+  &__header{
+    text-align: center;
+    margin-bottom: 92px;
+    >p{
+      @include smallest($smallest-blue);
+      margin-bottom: 20px;
+    }
+  }
+  &__title{
+    @include txt-l($m);
+  }
+  &__article{
+    background: #FFFFFF;
+    border:$border-bottom;
+    box-shadow: $box-shadow-article;
+    padding: 63px 41px 64px 35px;
+    max-width: 958px;
+    margin: 0 auto;
+    position: relative;
+    &::before{
+      content: "";
+      background: url("./../assets/images/main/blog/arrow-left.svg") no-repeat;
+      display: block;
+      width: 30px;
+      height: 20px;
+      position: absolute;
+      left: -103px;
+      top:50%;
+      transform: translateY(-50%);
+    }
+    &::after{
+      content: "";
+      background: url("./../assets/images/main/blog/arrow-right.svg") no-repeat;
+      display: block;
+      width: 30px;
+      height: 20px;
+      position: absolute;
+      right: -103px;
+      top:50%;
+      transform: translateY(-50%);
+    }
+    &_title{
+      @include subtitle($n);
+    }
+    &_text{
+        p{
+          margin: 32px 0 31px;
+          font-weight: $n;
+          max-width: 408px;
+        }
+    }
+
+    &_buttons{
+      gap:8px;
+    }
+    &_btn-1{
+      @include btn($blue-bg-color);
+    }
+    &_btn-2{
+      padding: 13px 15px;
+      min-width: 181px;
+    }
+
+
+    &_img{
+      max-width: 100%;
+      &_btn-2{
+        display: none;
+      }
+      gap:13px;
+      &-2-3{
+        flex-direction: column;
+        gap: 14px;
+        max-width: 127px;
+      }
+      &-1 {
+        max-width: 267px;
+        filter: $shadow-filter-img;
+
+        img{
+          position: relative;
+          z-index: 1;
+          max-width: 100%;
+        }
+        [alt="search"]{
+          position: absolute;
+          z-index: 2;
+          top:50%;
+          left:50%;
+          transform: translate(-50%,-50%);
+        }
+      }
+      &-2{
+        filter: $shadow-filter-img;
+        img{
+          max-width: 100%;
+        }
+      }
+      &-3{
+        filter: $shadow-filter-img;
+        img{
+          max-width: 100%;
+        }
+      }
+    }
+  }
+  &__dotes{
+    position: absolute;
+    bottom: 104px;
+    left:50%;
+    transform: translateX(-50%);
+    column-gap: 12px;
+  }
+}
