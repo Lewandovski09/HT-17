@@ -1,5 +1,5 @@
 .customer{
-  @media (max-width: $content-width) {
+  @include desktop{
     .row {
       column-gap: 75px;
       justify-content: center;
@@ -12,7 +12,7 @@
 
   }
 
-  @media (max-width: $break-point__l) {
+  @include laptop {
     padding: 55px 0;
     .row {
       column-gap: 35px;
@@ -25,7 +25,7 @@
     }
   }
 
-  @media (max-width: $break-point__m) {
+  @include tablet {
     padding: 50px 0;
     .row {
       column-gap: 0;
@@ -39,7 +39,7 @@
     }
   }
 
-  @media (max-width: $break-point__s) {
+  @include mobile {
     .row {
       column-gap: 2px;
       row-gap: 10px;
@@ -55,7 +55,7 @@
     }
   }
 
-  @media (max-width: $break-point__xs) {
+  @include mobile-xs {
     padding: 45px 0;
     .row {
       column-gap: 3px;

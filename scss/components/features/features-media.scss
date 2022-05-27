@@ -1,9 +1,9 @@
 .features{
-  @media (max-width: $content-width) {
+  @include desktop {
       padding: 160px 0;
   }
 
-  @media (max-width: $break-point__l) {
+  @include laptop {
     padding: 150px 0;
     &__row{
       column-gap: 60px;
@@ -13,7 +13,7 @@
     }
   }
 
-  @media (max-width: $break-point__m) {
+  @include tablet {
     background-repeat: repeat;
     padding: 130px 0;
     &__row{
@@ -26,11 +26,11 @@
     }
   }
 
-  @media (max-width: $break-point__s) {
+  @include mobile {
     padding: 120px 0;
   }
 
-  @media (max-width: $break-point__xs) {
+  @include mobile-xs  {
     padding: 110px 0;
     &__row{
       row-gap: 60px;
@@ -68,7 +68,7 @@
     }
   }
 
-  @media (max-width: $break-point__extra-xs) {
+  @include mobile-extra-xs {
     padding: 100px 0;
     &__row{
       margin: 60px auto 75px;

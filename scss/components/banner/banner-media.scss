@@ -1,14 +1,8 @@
 .banner{
   position: relative;
-  @media (max-width: $content-width) {
-    //padding: 90px 0 28px;
 
-    &__dotes{
-      margin-top: 170px;
-    }
-  }
 
-  @media (max-width: $break-point__l) {
+  @include laptop{
     &:before {
       background-size: contain;
       background-repeat: repeat;
@@ -32,10 +26,10 @@
     }
   }
 
-  @media (max-width: $break-point__m) {
+  @include tablet {
     &:after {
       background-size: contain;
-      height: 58%;
+      height: 61%;
     }
     //padding: 70px 0 25px;
     font-size: 14px;
@@ -47,16 +41,10 @@
         line-height: 50px;
       }
     }
-    &__dotes {
-      margin-top: 140px;
-    }
-    .dote{
-      width: 7px;
-      height: 7px;
-    }
+
   }
 
-  @media (max-width: $break-point__s) {
+  @include mobile {
     &:after {
       background-size: contain;
       height: 45%;
@@ -75,16 +63,10 @@
       max-width: 420px;
       font-size: 13px;
     }
-    &__dotes {
-      margin-top: 120px;
-    }
-    .dote{
-      width: 6px;
-      height: 6px;
-    }
+
   }
 
-  @media (max-width: $break-point__xs) {
+  @include mobile-xs {
     &:after {
       background-size: contain;
       height: 37%;
@@ -100,16 +82,10 @@
     &__text{
       max-width: 100%;
     }
-    &__dotes {
-      margin-top: 120px;
-    }
-    .dote{
-      width: 6px;
-      height: 6px;
-    }
+
   }
 
-  @media (max-width: $break-point__extra-xs) {
+  @include mobile-extra-xs{
     &:after {
       background-size: contain;
       height: 32%;

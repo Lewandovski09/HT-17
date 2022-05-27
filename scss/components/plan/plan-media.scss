@@ -1,5 +1,5 @@
 .plan{
-  @media (max-width: $content-width) {
+  @include desktop {
     padding:150px 0 110px;
     &__text {
       margin-top: 50px;
@@ -12,7 +12,7 @@
     }
   }
 
-  @media (max-width: $break-point__l) {
+  @include laptop {
     padding:110px 0;
     &__text {
       margin-top: 50px;
@@ -33,7 +33,7 @@
 
   }
 
-  @media (max-width: $break-point__m) {
+  @include tablet {
     padding: 75px 0 90px;
     .row{
         flex-direction: column;
@@ -65,7 +65,7 @@
     }
   }
 
-  @media (max-width: $break-point__s) {
+  @include mobile {
     padding: 70px 0 85px;
     &__text {
       h2{
@@ -73,9 +73,14 @@
         line-height: 42px;
       }
     }
+    &__buttons {
+      a {
+        width: 50%;
+      }
+    }
   }
 
-  @media (max-width: $break-point__xs) {
+  @include mobile-xs {
     padding: 65px 0 80px;
     &__text {
       h2{
@@ -90,7 +95,4 @@
     }
   }
 
-  @media (max-width: $break-point__extra-xs) {
-
-  }
 }

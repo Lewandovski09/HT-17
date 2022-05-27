@@ -1,7 +1,7 @@
 .header{
   $text-shadow-btn:0 4px 4px rgba(0, 0, 0, 0.25);
 
-  @media (max-width: $content-width) {
+  @include desktop{
     &__menu {
       column-gap: 40px;
     }
@@ -19,7 +19,8 @@
 
   }
 
-  @media (max-width: $break-point__l) {
+
+  @include laptop{
     border-bottom: $border-bottom;
     .row{
       width: 100%;
@@ -47,7 +48,7 @@
     }
   }
 
-  @media (max-width: $break-point__m) {
+  @include tablet {
     padding: 0;
 
     &__wrapper{
@@ -142,7 +143,7 @@
     }
   }
 
-  @media (max-width: $break-point__s) {
+  @include mobile {
     &__wrapper{
       padding: 19px;
     }
@@ -167,12 +168,12 @@
   }
 
 
-  @media (min-width: $break-point__m) {
+  @include tablet('min') {
     label {
       display: none;
     }
   }
-  @media (max-width: $break-point__xs){
+  @include mobile-xs{
     &__logo {
       display: none;
     }
@@ -195,7 +196,8 @@
       }
     }
   }
-  @media (min-width: $break-point__xs){
+
+  @include mobile-xs('min'){
     .visible{
       display: none;
     }

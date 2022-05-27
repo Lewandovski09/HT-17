@@ -1,9 +1,6 @@
 .stats{
-  @media (max-width: $content-width) {
 
-  }
-
-  @media (max-width: $break-point__l) {
+  @include laptop {
     $padding-from-center:80px;
     &__productivity {
       padding: 66px $padding-from-center 66px 0;
@@ -13,7 +10,7 @@
     }
   }
 
-  @media (max-width: $break-point__m) {
+  @include tablet {
     $padding-from-center:70px;
     &__productivity {
       padding: 66px $padding-from-center 66px 0;
@@ -23,7 +20,7 @@
     }
   }
 
-  @media (max-width: $break-point__s) {
+  @include mobile {
     $padding-from-center:50px;
     &__productivity {
       padding: 66px $padding-from-center 66px 0;
@@ -33,7 +30,7 @@
     }
   }
 
-  @media (max-width: $break-point__xs) {
+  @include mobile-xs {
     .container {
       padding: 0;
     }

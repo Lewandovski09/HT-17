@@ -18,7 +18,7 @@
     padding: 66px $padding-from-center 66px 0;
     text-align: right;
     color: #fff;
-    &:after{
+    &:before{
       content: "";
       display: block;
       height: 100%;
@@ -33,7 +33,7 @@
   &__app{
     padding:70px 0 66px $padding-from-center;
     color: #5E80FF;
-    &:after{
+    &:before{
       content: "";
       display: block;
       height: 100%;
